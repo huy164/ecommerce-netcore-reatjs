@@ -1,0 +1,45 @@
+.article-detail h1,
+h2 {
+    font-size: 1.5rem !important;
+}
+
+.post-title {
+    color: black;
+    font-size: 18px;
+}
+
+.post-description {
+    color: black;
+    font-size: 14px;
+}
+
+.article-detail a {
+    color: black !important;
+}
+
+.blog-meta h5 {
+    color: black;
+    font-size: 18px;
+}
+.blog-meta p {
+    color: black;
+    font-size: 14px;
+}
+
+.blog-box {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px 0px 10px;
+    box-shadow: rgba(46, 47, 48, 0.1) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px, -4px 65px 90px 20px #ed00000d;
+}
+.blog-box:hover {
+    cursor: pointer;
+    box-shadow: rgba(247, 5, 158, 0.1) 0px 4px 4px 2px, rgba(130, 6, 208, 0.15) 0px 4px 6px 4px, -4px 65px 90px 20px #c730300d;
+}
+
+.addArticle a {
+    color: black;
+}
+.addArticle  {
+    color: black;
+}

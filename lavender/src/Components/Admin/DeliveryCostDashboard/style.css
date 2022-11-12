@@ -1,0 +1,22 @@
+.khachhangmodal .add-khachhang-button {
+  position: absolute !important;
+  right: 19px;
+  top: -7px;
+
+}
+.khachhangmodal{
+  overflow: scroll;
+}
+.khachhangmodal .danhsachsanpham-title {
+  z-index: 3;
+}
+.khachhangmodal .add-item-modal {
+  z-index: 2;
+
+}
+.khachhangmodal .form-main-add-edit {
+  padding: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}

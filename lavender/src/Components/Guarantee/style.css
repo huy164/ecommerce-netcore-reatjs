@@ -1,0 +1,11 @@
+.head-content a{
+    color:lightslategrey;
+
+}
+.head-content a:hover{
+    color:#e91e63;
+    
+}
+.baohanh-noidung{
+    position: relative;
+}

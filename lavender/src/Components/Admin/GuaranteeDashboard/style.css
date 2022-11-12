@@ -1,0 +1,175 @@
+.card11 {
+    width: 650px;
+    border: none;
+    height: 500px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden
+}
+
+.p-info {
+    display: flex;
+    justify-content: space-between
+}
+
+.p-price {
+    position: absolute;
+    right: 10px;
+    top: 20px
+}
+
+.heart i {
+    font-size: 50px;
+    opacity: 0;
+    color: red
+}
+
+.heart i:hover {
+    color: red
+}
+
+.p-image img {
+    width: 240px;
+    transform: rotate(15deg);
+    transition: all 0.5s
+}
+
+.card11:hover .heart i {
+    animation: heart 300ms ease-in forwards;
+    animation-delay: 500ms
+}
+
+.p-about {
+    position: absolute;
+    width: 170px;
+    font-size: 10px;
+    top: 140px;
+    left: -125px;
+    opacity: 0
+}
+
+.card11:hover .p-about {
+    animation: content 300ms ease-in forwards
+}
+
+@keyframes content {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+        left: 25px
+    }
+}
+
+@keyframes heart {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.card11:hover .p-image img {
+    animation: onimage 300ms ease-in forwards
+}
+
+.card11:hover .p-price {
+    animation: onprice 500ms ease-in forwards
+}
+
+@keyframes onprice {
+    0% {
+        right: 10px;
+        top: 20px
+    }
+
+    50% {
+        right: 60px;
+        top: 30px
+    }
+
+    100% {
+        right: 267px;
+        top: 70px
+    }
+}
+
+@keyframes onimage {
+    0% {
+        width: 250px
+    }
+
+    50% {
+        width: 200px;
+        transform: translateY(-30px);
+        transform: translateX(100px)
+    }
+
+    100% {
+        width: 180px;
+        top: 100px;
+        transform: translateY(100px);
+        transform: translateX(110px)
+    }
+}
+
+.buttons {
+    position: absolute;
+    bottom: -150px
+}
+
+.card11:hover .buttons {
+    animation: buttons 500ms ease-in forwards
+}
+
+
+
+.button1 {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #111;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif
+}
+
+.button1:before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite
+}
+
+.button1:hover:before {
+    opacity: 1
+}
+
+.button1:hover:active {
+    background: none
+}
+
+.button1:hover:active:before {
+    filter: blur(2px)
+}
+
+
